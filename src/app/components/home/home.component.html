@@ -1,0 +1,48 @@
+<!-- src/app/components/home/home.component.html -->
+
+<!-- Hero Section -->
+<div class="container-fluid hero-section text-center py-5 bg-primary text-white">
+  <h1 class="display-4">Welcome to the Barcode Scanner App</h1>
+  <p class="lead">Manage your inventory effortlessly with our barcode scanning tool.</p>
+  <div class="mt-4">
+    <a class="btn btn-light btn-lg me-3" routerLink="/scan" routerLinkActive="active">
+      <i class="fas fa-barcode"></i> Scan Barcode
+    </a>
+    <a routerLink="/products" class="btn btn-outline-secondary btn-lg" routerLinkActive="active">
+      <i class="fas fa-box"></i> View Products
+    </a>
+  </div>
+</div>
+
+<!-- Features Section -->
+<div class="container my-5">
+  <div class="row text-center">
+    <div class="col-12 col-md-4 mb-4">
+      <div class="feature">
+        <i class="fa fa-barcode fa-3x mb-3 text-primary"></i>
+        <h3>Easy Barcode Scanning</h3>
+        <p>Scan barcodes effortlessly with your device camera.</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mb-4">
+      <div class="feature">
+        <i class="fa fa-cubes fa-3x mb-3 text-primary"></i>
+        <h3>Real-time Inventory Updates</h3>
+        <p>Keep your inventory up to date automatically.</p>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mb-4">
+      <div class="feature">
+        <i class="fa fa-list fa-3x mb-3 text-primary"></i>
+        <h3>Detailed Product Management</h3>
+        <p>Manage product details with ease and accuracy.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer bg-light text-center py-3">
+  <p>&copy; 2024 Barcode Scanner App. All rights reserved.</p>
+  <p><a routerLink="/contact" class="text-dark">Contact Us</a> | <a routerLink="/privacy" class="text-dark">Privacy Policy</a></p>
+</footer>

@@ -1,0 +1,2 @@
+<mat-progress-spinner *ngIf="isLoading" mode="indeterminate"></mat-progress-spinner>
+<zxing-scanner (scanSuccess)="onCodeResult($event)"></zxing-scanner>

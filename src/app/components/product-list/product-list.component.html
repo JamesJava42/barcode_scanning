@@ -1,0 +1,7 @@
+<div class="product-list-container">
+    <input type="text" placeholder="Search products..." [(ngModel)]="searchQuery" class="search-bar">
+    <div class="product-grid">
+      <app-product *ngFor="let product of filterProducts()" [product]="product"></app-product>
+    </div>
+  </div>
+  

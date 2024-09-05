@@ -1,0 +1,9 @@
+<div class="product-card" [ngStyle]="{'border-color': getBorderColor()}" (click)="openProductDetail()">
+  <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image">
+  <h3>{{ product.name }}</h3>
+  <p>Category: {{ product.category }}</p>
+  <p>Price: ${{ product.price }}</p>
+  <p>Quantity: {{ product.quantity }}</p>
+  <p>Status: {{ product.inStock ? 'In Stock' : 'Out of Stock' }}</p>
+  <p>Last Updated: {{ product.lastUpdated | date }}</p>
+</div>
